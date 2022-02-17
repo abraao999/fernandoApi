@@ -14,6 +14,7 @@ import reservaRoutes from "./routes/reservaRoutes";
 import correioRoutes from "./routes/correioRoutes";
 import produtoRoutes from "./routes/produtoRoutes";
 import orcamentoRoutes from "./routes/orcamentoRoutes";
+import tipoQuartoRoutes from "./routes/tipoQuartoRoutes";
 
 const whiteList = [
   // dados do servidor
@@ -51,6 +52,7 @@ class App {
     this.app.use("/correio/", correioRoutes);
     this.app.use("/produto/", produtoRoutes);
     this.app.use("/orcamento/", orcamentoRoutes);
+    this.app.use("/tipoQuarto/", tipoQuartoRoutes);
   }
 }
 export default new App().app;

@@ -14,6 +14,7 @@ var _reservaRoutes = require('./routes/reservaRoutes'); var _reservaRoutes2 = _i
 var _correioRoutes = require('./routes/correioRoutes'); var _correioRoutes2 = _interopRequireDefault(_correioRoutes);
 var _produtoRoutes = require('./routes/produtoRoutes'); var _produtoRoutes2 = _interopRequireDefault(_produtoRoutes);
 var _orcamentoRoutes = require('./routes/orcamentoRoutes'); var _orcamentoRoutes2 = _interopRequireDefault(_orcamentoRoutes);
+var _tipoQuartoRoutes = require('./routes/tipoQuartoRoutes'); var _tipoQuartoRoutes2 = _interopRequireDefault(_tipoQuartoRoutes);
 
 const whiteList = [
   // dados do servidor
@@ -51,6 +52,7 @@ class App {
     this.app.use("/correio/", _correioRoutes2.default);
     this.app.use("/produto/", _produtoRoutes2.default);
     this.app.use("/orcamento/", _orcamentoRoutes2.default);
+    this.app.use("/tipoQuarto/", _tipoQuartoRoutes2.default);
   }
 }
 exports. default = new App().app;
